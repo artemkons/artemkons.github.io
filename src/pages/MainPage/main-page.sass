@@ -1,0 +1,35 @@
+@use "../../mixins"
+@use "../../styles/colors"
+@use "../../styles/fonts"
+
+.main-page
+    display: grid
+    gap: 10px 30px
+    grid-template-columns: 1fr
+    justify-items: center
+    align-items: center
+    height: 100%
+
+    &__header
+        @include mixins.media-lg
+            grid-column: 2/3
+
+    &__subtitle
+        text-align: center
+        font-size: fonts.$xl2
+
+        @include mixins.media-lg
+            grid-column: 2/3
+
+    &__text
+        align-self: flex-start
+        padding: 20px
+        border-radius: 20px
+        background-color: lighten(colors.$dark, 10%)
+
+        @include mixins.media-lg
+            grid-row: 2/3
+
+    @include mixins.media-lg
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 40px 1fr

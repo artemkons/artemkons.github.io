@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainPage from './pages/MainPage';
+import MainPage from './pages/MainPage/MainPage';
 import AboutProjectPage from './pages/AboutProjectPage';
 import AboutScenarioPage from './pages/AboutScenarioPage';
 import HowItWorksPage from './pages/AboutScenarioPage';
