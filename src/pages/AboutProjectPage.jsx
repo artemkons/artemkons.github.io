@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/Button' 
 
 const AboutProjectPage = () => {
   return <>
@@ -17,7 +18,7 @@ const AboutProjectPage = () => {
     </p>
     <p>Проанализировав потребность пользоватей, было решено встроить в платформу Git подобную систему версий.
     </p>
-    <button>Хочу следить за проектом</button>
+    <Button>Хочу следить за проектом</Button>
   </>
 }
 

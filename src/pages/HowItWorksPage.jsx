@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/Button' 
 
 const HowItWorksPage = () => {
   return <>
@@ -9,7 +10,8 @@ const HowItWorksPage = () => {
       Запускаете и разрешаете ему необходимые доступы
       Вуа-ля, ваше устройство работает без вас
     </p>
-    <button>Хочу следить за проектом</button></>
+    <Button>Хочу следить за проектом</Button>
+  </>
 }
 
 export default HowItWorksPage

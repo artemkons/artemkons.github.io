@@ -1,10 +1,11 @@
 import React from 'react'
+import Button from '../components/Button' 
 
 const AboutScenarioPage = () => {
   return <>
     <h1>О проекте</h1>
     <p>Здесь будет видео</p>
-    <button>Хочу следить за проектом</button>
+    <Button>Хочу следить за проектом</Button>
   </>
 }
 
