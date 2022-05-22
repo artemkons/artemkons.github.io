@@ -1,0 +1,41 @@
+@use "./mixins"
+@use "./styles/colors"
+@use "./styles/fonts"
+
+@use "swiper.sass"
+
+*
+     box-sizing: border-box
+
+body
+     margin: 0
+     font-family: 'Montserrat', 'Roboto', sans-serif
+     background-color: #1f2631
+
+     h1
+          color: colors.$blue
+
+     p
+          color: colors.$white
+          font-size: fonts.$xl
+
+     button
+          font-size: fonts.$xl
+
+.App
+     padding: 4px
+     height: 100vh
+
+     @include mixins.media-md
+          padding: 20px
+
+.button-primary
+     margin-top: auto
+     padding: 12px
+     background-color: #D2AD9A  
+     border: none
+     border-radius: 40px
+
+.subtitle
+     text-align: center
+     font-size: fonts.$xl2

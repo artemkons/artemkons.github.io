@@ -1,0 +1,53 @@
+@use "./mixins"
+
+@use "swiper/css"
+@use "swiper/css/pagination"
+
+.main-swiper
+     width: 100%
+     height: 100%
+
+.swiper-slide
+     display: flex
+     flex-direction: column
+     padding: 12px
+
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets
+     right: auto
+
+     @include mixins.media-md
+          left: 10px
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet
+     &__slider-counter
+          display: none
+
+     @include mixins.media-md
+          position: relative
+          width: auto
+          height: auto
+          background: transparent
+
+          &:before
+               content: ""
+               display: block
+               position: absolute
+               width: 0
+               height: 0
+               top: 17px
+               left: -40px
+               background-color: red
+          @include mixins.base-transition(width)
+
+          &-active
+               margin-left: 30px
+               font-size: 2rem
+               font-weight: bold
+               @include mixins.base-transition(font-size)
+
+               &:before
+                    width: 30px
+                    height: 4px
+
+          &__slider-counter
+               display: block
