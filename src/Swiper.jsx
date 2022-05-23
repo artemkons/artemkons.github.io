@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MainPage from './pages/MainPage/MainPage';
-import AboutProjectPage from './pages/AboutProjectPage';
+import AboutProjectPage from './pages/AboutProjectPage/AboutProjectPage';
 import AboutScenarioPage from './pages/AboutScenarioPage';
 import HowItWorksPage from './pages/AboutScenarioPage';
 import OurBenefitsPage from './pages/OurBenefitsPage';

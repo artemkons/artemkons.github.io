@@ -12,9 +12,12 @@
      display: flex
      flex-direction: column
      align-items: center
-     max-width: 1200px 
+     max-width: 800px 
      margin: 0 auto
      padding: 12px
+
+     @include mixins.media-xl
+          max-width: 1200px
 
 .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets
      right: auto
