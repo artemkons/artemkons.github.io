@@ -35,7 +35,7 @@ const SwiperComponent = () => {
                     }</span></span>`;
                 }
             }}
-            mousewheel={true}
+            mousewheel={{ sensitivity: 0.5 }}
             scrollbar={{ draggable: true }}
             modules={[Pagination, Scrollbar, Mousewheel]}
             className='main-swiper'
