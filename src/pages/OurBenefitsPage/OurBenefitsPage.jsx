@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from "../../components/Button"
 
 import "./our-benefits-page.sass"
 
@@ -13,6 +14,7 @@ const OurBenefitsPage = () => {
              <li>Монетизация</li>
              <li>Динамика</li>
            </ul>
+           <Button>Хочу следить за проектом</Button>
   </div>
 }
 
