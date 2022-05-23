@@ -1,18 +1,35 @@
 @use "../../mixins"
-    
+@use "../../styles/fonts"
+
 .how-it-works-page
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 100%
+
     h1
         @include mixins.media-lg
             grid-column: 1/3
-    
+
     img
+        width: 200px
+
         @include mixins.media-lg
+            width: 400px
             grid-column: 2/3
-    
+
     p
+        margin-top: 40px
+
         @include mixins.media-lg
+            font-size: fonts.$xl3
             grid-row: 2/3
+
+    button
+        margin-top: auto
+        grid-column: 1/3
 
     @include mixins.media-lg
         display: grid
+        grid-gap: 30px 40px
         grid-template-columns: 1fr 1fr
