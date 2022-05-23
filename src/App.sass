@@ -35,9 +35,12 @@ body
           padding: 20px
 
 .button-primary
-     display: inline-block
-     margin-top: auto
+     display: block
+     margin: 0 auto
      padding: 16px
      background-color: colors.$brown
      border: none
      border-radius: 40px
+
+     @include mixins.media-height
+          display: none
