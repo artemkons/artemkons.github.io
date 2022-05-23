@@ -1,8 +1,24 @@
 @use "../../mixins"
+@use "../../styles/fonts"
 
 .about-project-page
-    display: grid
-    grid-template-columns: 1fr
+    @include mixins.media-lg
+        display: grid
+        grid-gap: 30px 40px
+
+    p
+        font-size: fonts.$lg
+
+        @include mixins.media-lg
+            font-size: fonts.$xl2
+
+    h1, h2
+        @include mixins.media-lg
+            font-size: fonts.$xl4
+
+    h2
+        @include mixins.media-lg
+            margin: 20px 0
 
     &__title
         grid-column: 1/2
@@ -35,7 +51,7 @@
 
     &__last
         grid-column: 1/2
-        margin-top: 10px
+        margin-top: 30px
 
         @include mixins.media-lg
             grid-column: 1/3
