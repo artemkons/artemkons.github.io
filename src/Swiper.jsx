@@ -2,8 +2,9 @@ import React from 'react';
 
 import MainPage from './pages/MainPage/MainPage';
 import AboutProjectPage from './pages/AboutProjectPage/AboutProjectPage';
-import AboutScenarioPage from './pages/AboutScenarioPage';
-import HowItWorksPage from './pages/AboutScenarioPage';
+// отключено до появления видео
+// import AboutScenarioPage from './pages/AboutScenarioPage';
+import HowItWorksPage from './pages/HowItWorksPage/HowItWorksPage';
 import OurBenefitsPage from './pages/OurBenefitsPage';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,7 +13,7 @@ import { Pagination, Scrollbar, Mousewheel } from 'swiper';
 const pages = [
     MainPage,
     AboutProjectPage,
-    AboutScenarioPage,
+    //AboutScenarioPage,
     HowItWorksPage,
     OurBenefitsPage
 ];
