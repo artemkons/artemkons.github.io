@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ApplicationAreaPage from './pages/ApplicationAreaPage';
 import MainPage from './pages/MainPage/MainPage';
 import AboutProjectPage from './pages/AboutProjectPage/AboutProjectPage';
 // отключено до появления видео
@@ -8,10 +9,11 @@ import HowItWorksPage from './pages/HowItWorksPage/HowItWorksPage';
 import OurBenefitsPage from './pages/OurBenefitsPage/OurBenefitsPage';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Scrollbar, Mousewheel, FreeMode } from 'swiper';
+import { Pagination, Scrollbar, Mousewheel } from 'swiper';
 import { useMediaQuery } from '@chakra-ui/react';
 
 const pages = [
+    <ApplicationAreaPage />,
     <MainPage />,
     <AboutProjectPage />,
     //AboutScenarioPage,
