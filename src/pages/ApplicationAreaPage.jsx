@@ -1,26 +1,27 @@
 import React from 'react'
-import { Heading, Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { Heading, Tabs, TabPanels, TabPanel } from '@chakra-ui/react'
 
+import TabListComponent from '../components/TabListComponent'
 import ListComponent from '../components/ListComponent'
 
 const ApplicationAreaPage = () => {
   return <>
     <Heading>Сферы применения</Heading>
-    <Tabs mt={10}>
-      <TabList overflowX="scroll" overflowY="clip">
-        <Tab>Продажи</Tab>
-        <Tab>Маркетинг</Tab>
-        <Tab>Закупки</Tab>
-        <Tab>Бухгалтерия</Tab>
-        <Tab>Data Science и аналитика</Tab>
-        <Tab>Тех-поддержка</Tab>
-        <Tab>Юристы</Tab>
-        <Tab>Делопроизводство</Tab>
-        <Tab>Human Resources</Tab>
-        <Tab>Гейминг</Tab>
-      </TabList>
+    <Tabs variant="" mt={10}>
+      <TabListComponent tabsText={[
+        "Продажи",
+        "Маркетинг",
+        "Закупки",
+        "Бухгалтерия",
+        "Data Science и аналитика",
+        "Тех-поддержка",
+        "Юристы",
+        "Делопроизводство",
+        "Human Resources",
+        "Гейминг"
+      ]} />
 
-      <TabPanels>
+      <TabPanels mt={25}>
         <TabPanel>
           <ListComponent itemsText={[
             "Поиск конкурсов и тендеров",

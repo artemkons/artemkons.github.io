@@ -12,6 +12,11 @@ const theme = extendTheme({
         fontSize: 'xl'
       }
     }
+  },
+  colors: {
+    orange: {
+      500: "#F65314"
+    }
   }
 })
 
