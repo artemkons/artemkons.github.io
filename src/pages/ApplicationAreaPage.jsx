@@ -14,7 +14,7 @@ const ApplicationAreaPage = () => {
       <TabPanels mt={25}>
         {FEATURES_CONTENT.map(([image, listText], i) => {
           return (
-            <TabPanel>
+            <TabPanel key={i}>
               <FeatureView
                 image={image}
                 listText={listText}
