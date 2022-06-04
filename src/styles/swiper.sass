@@ -1,5 +1,5 @@
 @use "./mixins"
-@use "./styles/colors"
+@use "./colors"
 
 @use "swiper/css"
 @use "swiper/css/pagination"
@@ -22,6 +22,9 @@
      @include mixins.media-lg
           left: 10px
 
+     .swiper-pagination-bullet
+          background: colors.$green
+
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet
      &__slider-counter
           display: none
@@ -40,7 +43,7 @@
                height: 0
                top: 17px
                left: -40px
-               background-color: colors.$brown
+               background-color: colors.$green
                @include mixins.base-transition(width)
 
           &-active

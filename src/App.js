@@ -3,7 +3,7 @@ import { ChakraProvider, } from '@chakra-ui/react'
 import Swiper from './Swiper'
 import useDocumentDimensions from './hooks/useDocumentDimensions'
 
-import "./App.sass"
+import "./styles/App.sass"
 import theme from './theme'
 
 function App() {
