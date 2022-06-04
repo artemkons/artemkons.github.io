@@ -100,8 +100,4 @@ const ApplicationAreaPage = () => {
   </>
 }
 
-
-
-
-
 export default ApplicationAreaPage
