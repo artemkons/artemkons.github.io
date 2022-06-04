@@ -7,6 +7,8 @@ import AboutProjectPage from './pages/AboutProjectPage/AboutProjectPage';
 // отключено до появления видео
 // import AboutScenarioPage from './pages/AboutScenarioPage';
 import HowItWorksPage from './pages/HowItWorksPage';
+import SubscribePage from './pages/SubscribePage'
+
 import OurBenefitsPage from './pages/OurBenefitsPage/OurBenefitsPage';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,6 +18,7 @@ const pages = [
   <ApplicationAreaPage />,
   <ManuspectPossibilitiesPage />,
   <HowItWorksPage />,
+  <SubscribePage />,
   <MainPage />,
   <AboutProjectPage />,
   //AboutScenarioPage,
