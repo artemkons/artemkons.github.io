@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ApplicationAreaPage from './pages/ApplicationAreaPage';
+import ManuspectPossibilitiesPage from './pages/ManuspectPossibilitiesPage'
 import MainPage from './pages/MainPage/MainPage';
 import AboutProjectPage from './pages/AboutProjectPage/AboutProjectPage';
 // отключено до появления видео
@@ -13,6 +14,7 @@ import { Pagination, Scrollbar, Mousewheel } from 'swiper';
 
 const pages = [
   <ApplicationAreaPage />,
+  <ManuspectPossibilitiesPage />,
   <MainPage />,
   <AboutProjectPage />,
   //AboutScenarioPage,
