@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../../components/Button';
 
 import './main-page.sass';
 
@@ -21,7 +20,6 @@ const MainPage = () => {
                     затрачиваемое время на решение подобных задач.
                 </p>
             </div>
-            <Button className='button-primary'>Хочу следить за проектом</Button>
         </>
     );
 };

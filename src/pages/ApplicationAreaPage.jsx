@@ -2,99 +2,25 @@ import React from 'react'
 import { Heading, Tabs, TabPanels, TabPanel } from '@chakra-ui/react'
 
 import TabListComponent from '../components/TabListComponent'
-import ListComponent from '../components/ListComponent'
+import FeatureView from '../components/FeatureView'
+
+import { FEATURE_CATEGORIES, FEATURES_CONTENT } from '../utils/content'
 
 const ApplicationAreaPage = () => {
   return <>
     <Heading>Сферы применения</Heading>
     <Tabs variant="" mt={10}>
-      <TabListComponent tabsText={[
-        "Продажи",
-        "Маркетинг",
-        "Закупки",
-        "Бухгалтерия",
-        "Data Science и аналитика",
-        "Тех-поддержка",
-        "Юристы",
-        "Делопроизводство",
-        "Human Resources",
-        "Гейминг"
-      ]} />
-
+      <TabListComponent tabsText={FEATURE_CATEGORIES} />
       <TabPanels mt={25}>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Поиск конкурсов и тендеров",
-            "Синхронизация договоров с контрагентами в СЭД"
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Синхронизация данных о клиентах в системах",
-            "Рассылка писем лояльности и размещение публикаций"
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Контроль остатков, формирование заявок",
-            "Поиск лучших цен",
-            "Сбор и сравнение предложений",
-            "Проверка закупочной документации"
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Формирование отчетов и актов сверки",
-            "Разнесение банковских выписок из клиент-банка",
-            "Подготовка актов и счетов, платежек",
-            "Контроль взаиморасчетов",
-            "Заполнение данных из первичных документов",
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Автоматизизация приложения без открытого API",
-            "Кастомизируемая инфографика",
-            "Кастомизируемый интерфейс для разметки датасетов",
-            "Быстрая настройка сценария для сбора и экспорта данных"
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Зарегистрирует, классифицирует и проконтролирует исполнение обращений",
-            "Выполнит сервисные запросы на обслуживание – доступы, пароли, почтовые адреса и т.п"
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Проверка договоров на соответствие НПА",
-            "Проверка информации по контрагенту",
-            "Подготовка запросов и рассылка документов при работе с задолженностью"
-
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Регистрация, учет входящих документов и обращений, распределение по ответственным",
-            "Контроль согласования документов, исполнения поручений",
-            "Распознавание, сравнение и регистрация договоров"
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Оформление при приеме и увольнении",
-            "Оформление справок, приказов, отпусков, командировок Подготовка рабочего места и учетных записей",
-            "Формирование зарплатной ведомости",
-            "Консультации новичков по типовым вопросам"
-          ]} />
-        </TabPanel>
-        <TabPanel>
-          <ListComponent itemsText={[
-            "Крафт предметов по уже готовым рецептам",
-            "Оффлайн фарм",
-            "Выгодные покупки на внутриигрофых биржах"
-          ]} />
-        </TabPanel>
+        {FEATURES_CONTENT.map(([image, listText], i) => {
+          return (
+            <TabPanel>
+              <FeatureView
+                image={image}
+                listText={listText}
+                key={i} />
+            </TabPanel>)
+        })}
       </TabPanels>
     </Tabs>
   </>
