@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0969d2d.css",
-    "main.js": "/static/js/main.6cac5bf5.js",
+    "main.css": "/static/css/main.e4662e36.css",
+    "main.js": "/static/js/main.823d1094.js",
+    "static/media/TechSupportImage.png": "/static/media/TechSupportImage.16d5b89f04499631e2dd.png",
+    "static/media/OfficeWorkImage.png": "/static/media/OfficeWorkImage.6d573cb0861bf416d887.png",
+    "static/media/MarketingImage.png": "/static/media/MarketingImage.6a8987f580a6d7a5bd1f.png",
+    "static/media/SalesImage.png": "/static/media/SalesImage.7e82af54cab583be39b8.png",
+    "static/media/LawyersImage.png": "/static/media/LawyersImage.5da1b16743b8ba024e5b.png",
+    "static/media/GamingImage.png": "/static/media/GamingImage.65da178971994d6022b5.png",
+    "static/media/DataScienceImage.png": "/static/media/DataScienceImage.290c6e84b1667ea0c299.png",
+    "static/media/AccountingImage.png": "/static/media/AccountingImage.ef6fe1a508d7b5ba65df.png",
+    "static/media/PurchasesImage.png": "/static/media/PurchasesImage.a5b7bec90a8ba5b5e43f.png",
+    "static/media/HRImage.png": "/static/media/HRImage.27964883c0e01c2c5292.png",
+    "static/media/ListIcon.svg": "/static/media/ListIcon.e8d80b0752bc6e2132a280ca735e0847.svg",
     "index.html": "/index.html",
-    "main.a0969d2d.css.map": "/static/css/main.a0969d2d.css.map",
-    "main.6cac5bf5.js.map": "/static/js/main.6cac5bf5.js.map"
+    "main.e4662e36.css.map": "/static/css/main.e4662e36.css.map",
+    "main.823d1094.js.map": "/static/js/main.823d1094.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0969d2d.css",
-    "static/js/main.6cac5bf5.js"
+    "static/css/main.e4662e36.css",
+    "static/js/main.823d1094.js"
   ]
 }
