@@ -2,14 +2,8 @@ import React from 'react';
 
 import ApplicationAreaPage from './pages/ApplicationAreaPage';
 import ManuspectPossibilitiesPage from './pages/ManuspectPossibilitiesPage'
-import MainPage from './pages/MainPage/MainPage';
-import AboutProjectPage from './pages/AboutProjectPage/AboutProjectPage';
-// отключено до появления видео
-// import AboutScenarioPage from './pages/AboutScenarioPage';
-import HowItWorksPage from './pages/HowItWorksPage';
+//import HowItWorksPage from './pages/HowItWorksPage';
 import SubscribePage from './pages/SubscribePage'
-
-import OurBenefitsPage from './pages/OurBenefitsPage/OurBenefitsPage';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, Mousewheel } from 'swiper';
@@ -17,12 +11,8 @@ import { Pagination, Scrollbar, Mousewheel } from 'swiper';
 const pages = [
   <ApplicationAreaPage />,
   <ManuspectPossibilitiesPage />,
-  <HowItWorksPage />,
-  <SubscribePage />,
-  <MainPage />,
-  <AboutProjectPage />,
-  //AboutScenarioPage,
-  <OurBenefitsPage />
+  //<HowItWorksPage />,
+  <SubscribePage />
 ];
 
 const SwiperComponent = () => {
