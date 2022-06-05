@@ -1,29 +1,11 @@
 import React from 'react'
-import { Heading, Tabs, TabPanels, TabPanel } from '@chakra-ui/react'
 
-import TabListComponent from '../components/TabListComponent'
-import FeatureView from '../components/FeatureView'
+import PageView from '../components/PageView'
 
 import { FEATURE_CATEGORIES, FEATURES_CONTENT } from '../utils/content'
 
 const ApplicationAreaPage = () => {
-  return <>
-    <Heading>Сферы применения</Heading>
-    <Tabs variant="" mt={10}>
-      <TabListComponent tabsText={FEATURE_CATEGORIES} />
-      <TabPanels mt={25}>
-        {FEATURES_CONTENT.map(([image, listText], i) => {
-          return (
-            <TabPanel key={i}>
-              <FeatureView
-                image={image}
-                listText={listText}
-                key={i} />
-            </TabPanel>)
-        })}
-      </TabPanels>
-    </Tabs>
-  </>
+  return <PageView header="Сферы применения" tabsText={FEATURE_CATEGORIES} featureContent={FEATURES_CONTENT}/>
 }
 
 export default ApplicationAreaPage

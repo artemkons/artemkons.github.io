@@ -5,7 +5,7 @@ import ListComponent from './ListComponent'
 
 const FeatureView = ({ image, listText }) => {
   return <>
-    <Image src={image} mx="auto" my={10} />
+    {image && <Image w={300} h="auto" src={image} mx="auto" my={[1, 5]} />}
     <ListComponent itemsText={listText} />
   </>
 }
