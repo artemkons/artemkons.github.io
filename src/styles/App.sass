@@ -7,9 +7,19 @@
 *
      box-sizing: border-box
 
+     &::-webkit-scrollbar
+        width: 8px
+        height: 6px
+
+     &::-webkit-scrollbar-track
+        background: transparent
+
+     &::-webkit-scrollbar-thumb
+        background-color: white
+        border-radius: 20px
+
 body
      margin: 0
-
 
 .App
      padding: 4px
