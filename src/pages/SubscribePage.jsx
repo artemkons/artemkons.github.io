@@ -1,13 +1,13 @@
 import React from 'react'
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Link, Heading, Text } from '@chakra-ui/react'
 
 const SubscribePage = () => {
-  return <Box fontSize="4xl">
-    <Heading>Хотите знать первыми, когда помощник будет доступен? </Heading>
-    <Text mt={60}>Оставьте номер, сообщим по смс</Text>
-    <Text mt={90}>За “помощник” следят уже ХХ(Х+1) человек!</Text>
-    <Heading mt={100}>Спасибо за интерес!</Heading>
-    <Text mt={24}>Следить за нашими новостями, задать нам вопросы и рассказать, какой именно функционал “помощник”а Вы ждете уже сейчас можно в нашем телеграм-канале!</Text>
+  return <Box fontSize={["2xl", "4xl"]}>
+    <Heading>Хотите знать первыми, когда помощник будет доступен?</Heading>
+    <Text color="#C4C4C4" mt={[30, 100]}>Оставьте почту и мы вам сообщим!</Text>
+    <Link isExternal href="https://docs.google.com/forms/d/e/1FAIpQLSfxMPi-awNM1nZRRlsbiZbmnpZWYsXlE7c1Yzcz3pauMvK-mQ/viewform"
+      display="flex" justifyContent="center" _hover={{ textDecor: "none" }} fontSize="xl" borderRadius={12} width={330} p={2} background="#00A1F1" boxShadow="0px 0px 20px #00A1F1" colorScheme="blue" mt={[200, 370]}>Перейти к форме</Link>
+    <Heading mt={[50, 90]}>Спасибо за интерес!</Heading>
   </Box>
 }
 

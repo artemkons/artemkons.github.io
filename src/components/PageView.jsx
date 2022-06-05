@@ -6,7 +6,6 @@ import TabListComponent from './TabListComponent'
 import FeatureView from './FeatureView'
 
 const PageView = ({ header, tabsText, featureContent }) => {
-  console.log("page view", tabsText)
   return <>
     <Heading>{header}</Heading>
     <Tabs variant="" mt={[5, 10]}>
