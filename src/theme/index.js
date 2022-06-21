@@ -1,5 +1,9 @@
 import { extendTheme } from '@chakra-ui/react'
 
+// components
+import Text from './components/Text'
+import Heading from './components/Heading'
+
 const theme = extendTheme({
   styles: {
     global: {
@@ -8,15 +12,16 @@ const theme = extendTheme({
         color: '#FFFFFF',
         font: "'Montserrat', 'Roboto', sans-serif'"
       },
-      'h1': {
-        fontSize: 'xl'
-      }
     }
   },
   colors: {
     orange: {
       500: "#F65314"
     }
+  },
+  components: {
+    Text,
+    Heading
   }
 })
 

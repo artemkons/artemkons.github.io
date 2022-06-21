@@ -1,13 +1,20 @@
+import { Heading, Grid, GridItem, Text, Image } from '@chakra-ui/react'
 import React from 'react'
 
-import PageView from '../components/PageView'
-
-import { MANUSPECT_POSSIBILITIES_TABS, MANUSPECT_POSSIBILITIES_CONTENT } from '../utils/content'
+import CrossoutBuyImage from '../images/CrossoutBuyImage.png'
 
 const ManuspectPossibilitiesPage = () => {
-  return <PageView header="Возможности Manuspect"
-    tabsText={MANUSPECT_POSSIBILITIES_TABS}
-    featureContent={MANUSPECT_POSSIBILITIES_CONTENT} />
+  return <>
+    <Heading>Возможности Manuspect</Heading>
+    <Grid h="100%" mt={[5, 10]} templateColumns="1fr 1fr">
+      <GridItem><Text>Используйте готовые сценарии и меняйте их под себя</Text></GridItem>
+      <GridItem></GridItem>
+      <GridItem></GridItem>
+      <GridItem><Text>Создавайте сценарии самостоятельно или в команде</Text></GridItem>
+      <GridItem><Text>Публикуйте заявки на написание сценариев</Text></GridItem>
+      <GridItem><Image src={CrossoutBuyImage}/></GridItem>
+    </Grid>
+  </>
 }
 
 export default ManuspectPossibilitiesPage

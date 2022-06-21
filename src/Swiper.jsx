@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MainPage from './pages/MainPage'
 import ApplicationAreaPage from './pages/ApplicationAreaPage';
 import ManuspectPossibilitiesPage from './pages/ManuspectPossibilitiesPage'
 //import HowItWorksPage from './pages/HowItWorksPage';
@@ -9,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, Mousewheel } from 'swiper';
 
 const pages = [
+  <MainPage />,
   <ApplicationAreaPage />,
   <ManuspectPossibilitiesPage />,
   //<HowItWorksPage />,
