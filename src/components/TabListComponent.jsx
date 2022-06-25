@@ -1,11 +1,13 @@
 import React from 'react'
 import { TabList, Tab } from '@chakra-ui/react'
 
-const TabListComponent = ({ tabsText }) => {
+import NEON_STYLE from '../theme/styles'
+
+const TabListComponent = ({ tabs }) => {
   return (
-    <TabList whiteSpace="nowrap" overflowX="scroll" overflowY="clip" overflow>
-      {tabsText.map((text, i) => (
-        <Tab fontSize={["2xl", "4xl"]} _selected={{ boxShadow: "none", color: "orange.500" }} key={i}>{text}</Tab>
+    <TabList h={100} whiteSpace="nowrap" overflowX="scroll">
+      {tabs.map((text, i) => (
+        <Tab fontSize={["2xl", "4xl"]} _selected={NEON_STYLE} _focus={{ boxShadow: "none" }} key={i}>{text}</Tab>
       ))}
     </TabList>
   )

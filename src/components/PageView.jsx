@@ -9,7 +9,7 @@ const PageView = ({ header, tabsText, featureContent }) => {
   return <>
     <Heading>{header}</Heading>
     <Tabs variant="" mt={[5, 10]}>
-      <TabListComponent tabsText={tabsText} />
+      <TabListComponent tabs={tabsText} />
       <TabPanels mt={[5, 25]}>
         {featureContent.map(([image, listText], i) => {
           return (
