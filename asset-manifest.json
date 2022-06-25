@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8686dc4c.css",
-    "main.js": "/static/js/main.eaf25185.js",
+    "main.css": "/static/css/main.b2638821.css",
+    "main.js": "/static/js/main.1966a287.js",
     "static/media/TechSupportImage.png": "/static/media/TechSupportImage.16d5b89f04499631e2dd.png",
     "static/media/OfficeWorkImage.png": "/static/media/OfficeWorkImage.6d573cb0861bf416d887.png",
     "static/media/MarketingImage.png": "/static/media/MarketingImage.6a8987f580a6d7a5bd1f.png",
@@ -12,15 +12,16 @@
     "static/media/AccountingImage.png": "/static/media/AccountingImage.ef6fe1a508d7b5ba65df.png",
     "static/media/PurchasesImage.png": "/static/media/PurchasesImage.a5b7bec90a8ba5b5e43f.png",
     "static/media/HRImage.png": "/static/media/HRImage.27964883c0e01c2c5292.png",
+    "static/media/AbilitiesImage1.png": "/static/media/AbilitiesImage1.5a893842becd3baf4011.png",
     "static/media/CrossoutBuyImage.png": "/static/media/CrossoutBuyImage.17ea6e2ea60d70d8bd3d.png",
     "static/media/MainImage.png": "/static/media/MainImage.49e6713299c3ad6c5331.png",
     "static/media/ListIcon.svg": "/static/media/ListIcon.e8d80b0752bc6e2132a280ca735e0847.svg",
     "index.html": "/index.html",
-    "main.8686dc4c.css.map": "/static/css/main.8686dc4c.css.map",
-    "main.eaf25185.js.map": "/static/js/main.eaf25185.js.map"
+    "main.b2638821.css.map": "/static/css/main.b2638821.css.map",
+    "main.1966a287.js.map": "/static/js/main.1966a287.js.map"
   },
   "entrypoints": [
-    "static/css/main.8686dc4c.css",
-    "static/js/main.eaf25185.js"
+    "static/css/main.b2638821.css",
+    "static/js/main.1966a287.js"
   ]
 }
