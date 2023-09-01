@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-zinc-100 font-sans text-black dark:bg-zinc-900 dark:text-white;
+
+        font-family: "Montserrat", sans-serif;
+    }
+
+    h1,
+    h2 {
+        @apply font-bold;
+    }
+
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply my-2 uppercase;
+    }
+
+    p {
+        @apply my-2;
+    }
+
+    button,
+    a {
+        @apply border-b-2 border-dotted border-black dark:border-white;
+    }
+
+    ul {
+        @apply pl-4;
+    }
+
+    ul > li {
+        @apply before:content-['\25c6'] before:pr-2;
+    }
+
+    @media print {
+        button {
+            @apply hidden;
+        }
+
+        ul.timeline > li {
+            border-color: black !important;
+        }
+
+        ul.timeline > li::before {
+            @apply hidden;
+        }
+    }
+}
+
+@layer components {
+    ul.timeline > li {
+        @apply relative border-l-2 border-black pl-2
+        before:absolute before:left-[-5px] before:top-[8px] before:h-2 before:w-2 before:rounded-full before:bg-black before:content-['']
+        dark:border-white dark:before:bg-white;
+    }
+
+    ul.timeline > li > p:first-child {
+        @apply font-semibold mt-0;
+    }
+
+    ul.timeline > li > p:last-child {
+        @apply mb-0;
+    }
+
+    ul.timeline > li:not(:last-child) {
+        @apply pb-4;
+    }
+}
